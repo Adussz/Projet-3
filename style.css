@@ -1,0 +1,111 @@
+/* ACCEUIL*/
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100&display=swap');
+.sizecontainer{
+    width: 100%;
+    max-width: 995px;
+    margin: 0 auto;
+}
+body{
+    font-family: 'Roboto', sans-serif;;
+}
+  /* LE HEADER */
+  .header{
+    font-family: 'Shrikhand', cursive;
+    text-align: center;
+    font-size: 30px;
+    position:relative;
+    box-shadow: 0px 2px 1px silver;
+}
+.header > h1{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.ville{
+    background-color: #e2e1e1;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;    
+}
+.maps{
+    margin-right: 20px;
+}
+    .Recherche{
+        text-align: center;
+        background-color: #f6f6f6;
+        height:220px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .Recherche h2{
+        margin-top: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .Recherche p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+                            /* BOUTON DU HEADER */
+    .Recherche button {
+       color:white;
+       margin-top: 10px;
+       background-image: linear-gradient(#FF79DA ,#9356DC);
+       padding: 20px 25px;
+       border: none;
+       font-size:20px ;
+       border-radius: 30px;
+       box-shadow: 0px 0px 5px grey;
+    }
+    .Recherche button:hover{
+        transform: scale(1.03);
+        transition: 200ms;
+        opacity: 0.8;
+    }
+                           /* FILTRES FONCTIONNEMENT */
+     .container-guide h2{
+       width:100%;              
+  }
+     .container-guide{
+      display:flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 10px;
+  }
+     .guide-card{
+      background-color:  #f6f6f6;
+      font-size: 20px;
+     padding: 10px 20px;
+     border-radius: 20px;
+     box-shadow: 0px 0px 5px grey;
+     flex-grow: 1;
+     margin:10px;
+     text-align: center;
+     display: flex;
+     align-items: center;
+ }
+    .guide-card:hover{
+     transform: scale(1.03);
+     cursor:pointer;
+     background-color: #9256dc25;
+     transition: 200ms;
+ }
+                         
+     .icon-card{
+     margin-right: 25px;
+     font-size: 20px;
+}
+    .chiffre{
+     background-color: #9356DC;
+     width: 22px;
+     height: 22px;
+     align-items: center;
+     margin-right: 20px;
+     margin-left: -33px;
+     border-radius: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+     font-size: 13px;
+}

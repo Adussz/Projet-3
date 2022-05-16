@@ -109,3 +109,85 @@ body{
     justify-content: space-around;
      font-size: 13px;
 }
+                         /* CARTES DES RESTAURANTS */
+.container-restaurant{
+    background-color: #f6f6f6;
+    margin-top:30px;
+    height: 1130px;
+}
+.container-restaurant h2{
+    margin-left: 30px;
+    padding-top: 30px;
+}
+.menus-card{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+ height: 225px;
+ width:100%;
+ margin:20px;
+ border-radius: 20px;
+ background-color: white;
+ position: relative;
+ margin-bottom: 5px;
+}
+.card > h3{
+ color:initial;
+ margin-left: 15px;
+ margin-top: 10px;
+ margin-bottom: 0;
+}
+.card > p {
+ margin-top: 0px;
+ margin-left:15px ;
+ color:initial;
+}
+                         /* IMAGES DES CARTES */
+.card > img{
+ width: 100%;
+ height: 155px;
+ object-fit: cover;
+ border-radius: 20px 20px 0 0;
+}
+                         /* TAG NOUVEAU */
+.tag{
+ position:relative;
+}
+.new{
+ background: #a9e0d1;
+ color: #10ac71;
+ padding: 10px 10px;
+ width: 70px;
+ position: absolute;
+ border-radius: 5px;
+ bottom:175px;
+ right:10px;
+}
+                         /* ICONE COEUR PAGE D'ACCEUIL */
+.heart{
+ position: absolute;
+ font-size: 25px;
+ color: initial;
+bottom: 50px;
+ right:40px;
+}
+.heart-v1{
+ position: absolute;
+}
+.heart-v2{
+ position: absolute;
+ opacity:0;
+ background: -webkit-linear-gradient(#9356dc,#ff79da);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ transition: 0.3s;
+}
+.heart-v2:hover{
+opacity:1;
+
+}
+.solid{
+ opacity: 0;
+}

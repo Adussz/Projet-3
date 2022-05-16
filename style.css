@@ -420,3 +420,24 @@ a {
 .delay-8 {
     animation: page 1.9s;
 }
+
+@media screen and ( min-width:726px){
+    .plat{
+        width:220px;
+        padding: 5px;
+}
+    .menu1{
+        flex-wrap: none;
+    }
+}
+@media screen and ( min-width:850px){
+    .plat{
+        width:260px;
+        padding:5px;
+    }
+}
+@media screen and ( min-width:990px){
+    .plat{
+        width:300px;
+    }
+}

@@ -9,6 +9,56 @@
 body{
     font-family: 'Roboto', sans-serif;;
 }
+                            /*LOADER */
+.loader{
+    background-color: white;
+    opacity:0.9;
+    height: 100vh;
+    position:fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    z-index: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    animation: hide 3s;
+    animation-fill-mode: forwards;
+}
+.loader > span {
+    border-radius: 50%;
+    background-color: #9356DC;
+    width:0px;
+    height:0px;
+    margin:0 8px;
+    animation: rebond 0.6s infinite alternate ;
+    
+}
+.loader >  span:nth-child(2){
+    background-color: #FF79DA;
+    animation-delay:0.2s;
+}
+.loader > span:nth-child(3){
+    background-color:plum ;
+    animation-delay:0.4s;
+}
+                            /* ANIMATIONS LOADER */
+@keyframes rebond {
+    to{
+        width: 16px;
+        height:16px;
+        transform: translate3d(0, -16px, 0);
+    }
+}
+@keyframes hide {
+    from{
+        transform:scale(1);
+    }
+    to{
+        visibility: hidden;
+    }
+}
   /* LE HEADER */
   .header{
     font-family: 'Shrikhand', cursive;
@@ -52,11 +102,12 @@ body{
        color:white;
        margin-top: 10px;
        background-image: linear-gradient(#FF79DA ,#9356DC);
-       padding: 20px 25px;
        border: none;
        font-size:20px ;
        border-radius: 30px;
        box-shadow: 0px 0px 5px grey;
+       width:250px;
+       height:60px;
     }
     .Recherche button:hover{
         transform: scale(1.03);
@@ -78,7 +129,7 @@ body{
       font-size: 20px;
      padding: 10px 20px;
      border-radius: 20px;
-     box-shadow: 0px 0px 5px grey;
+     box-shadow: 0px 0px 10px rgb(236, 236, 236);
      flex-grow: 1;
      margin:10px;
      text-align: center;
@@ -158,12 +209,15 @@ body{
 .new{
  background: #a9e0d1;
  color: #10ac71;
- padding: 10px 10px;
- width: 70px;
+ height: 35px;
+ width: 80px;
  position: absolute;
  border-radius: 5px;
  bottom:175px;
  right:10px;
+ display:flex;
+ align-items: center;
+ justify-content: center;
 }
                          /* ICONE COEUR PAGE D'ACCEUIL */
 .heart{
@@ -367,13 +421,13 @@ a {
     color:white;
        margin-top: 10px;
        background-image: linear-gradient(#FF79DA ,#9356DC);
-       padding: 20px 25px;
        border: none;
        font-size:20px ;
        border-radius: 30px;
        box-shadow: 0px 0px 5px grey;
-       display:flex;
        margin:30px;
+       width:150px;
+       height:50px;
 }
 .container-resto1 button:hover{
     transform: scale(1.03);

@@ -384,3 +384,39 @@ a {
     display:flex;
     justify-content: center;
 }
+                        /* ANNIMATION APPARITION DES PLATS */
+@keyframes page {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.delay-0{
+    animation: page 1s; 
+}
+.delay-1{
+    animation: page 1.2s;
+}
+.delay-2{
+    animation: page 1.3s; 
+}
+.delay-3{
+    animation: page 1.4s;
+}
+.delay-4{
+    animation: page 1.5s;
+}
+.delay-5{
+    animation: page 1.6s;
+}
+.delay-6{
+    animation :page 1.7s;
+}
+.delay-7{
+    animation: page 1.8s;
+}
+.delay-8 {
+    animation: page 1.9s;
+}
